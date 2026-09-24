@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مدینو | فروشگاه اینترنتی مدرن</title>
+<meta name="description" content="فروشگاه اینترنتی مدینو؛ خرید آنلاین موبایل، لپ‌تاپ، لوازم جانبی، پوشاک و کالاهای خانه با بهترین قیمت، ارسال سریع و ضمانت اصالت کالا.">
+<meta property="og:title" content="مدینو | فروشگاه اینترنتی مدرن">
+<meta property="og:description" content="خرید آنلاین با ارسال سریع و ضمانت اصالت کالا">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235b4ee6'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>M</text></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body data-page="home">
+<header id="site-header"></header>
+
+<main>
+  <!-- Hero slider -->
+  <section class="container hero-wrap">
+    <div class="hero-slider reveal" id="hero-slider"></div>
+    <button class="slider-btn s-prev" id="hero-prev" aria-label="اسلاید قبلی"></button>
+    <button class="slider-btn s-next" id="hero-next" aria-label="اسلاید بعدی"></button>
+    <div class="hero-dots" id="hero-dots"></div>
+  </section>
+
+  <!-- Services -->
+  <section class="container">
+    <div class="features-row reveal" id="features-row"></div>
+  </section>
+
+  <!-- Categories -->
+  <section class="container section">
+    <div class="section-head reveal"><h2>خرید بر اساس دسته‌بندی</h2><a class="see-all" href="./shop.html">مشاهده همه</a></div>
+    <div class="cat-grid reveal" id="cat-grid"></div>
+  </section>
+
+  <!-- Amazing offers -->
+  <section class="container section">
+    <div class="offers-box reveal">
+      <div class="offers-head">
+        <div class="offers-title"><h2>پیشنهاد شگفت‌انگیز</h2></div>
+        <div class="countdown" id="countdown">
+          <div class="cd-box"><span id="cd-h">۰۰</span><small>ساعت</small></div>
+          <div class="cd-box"><span id="cd-m">۰۰</span><small>دقیقه</small></div>
+          <div class="cd-box"><span id="cd-s">۰۰</span><small>ثانیه</small></div>
+        </div>
+      </div>
+      <div class="offers-wrap">
+        <button class="car-btn c-prev" id="offers-prev" aria-label="قبلی"></button>
+        <div class="offers-track" id="offers-track"></div>
+        <button class="car-btn c-next" id="offers-next" aria-label="بعدی"></button>
+      </div>
+      <a class="offers-all" href="./shop.html">مشاهده همه تخفیف‌ها</a>
+    </div>
+  </section>
+
+  <!-- Featured products -->
+  <section class="container section">
+    <div class="section-head reveal"><h2>محصولات منتخب</h2><a class="see-all" href="./shop.html">مشاهده همه</a></div>
+    <div class="tabs reveal" id="home-tabs">
+      <button class="tab active" data-tab="best">پرفروش‌ترین</button>
+      <button class="tab" data-tab="new">جدیدترین</button>
+      <button class="tab" data-tab="top">محبوب‌ترین</button>
+    </div>
+    <div class="products-grid" id="featured-grid"></div>
+  </section>
+
+  <!-- Banners -->
+  <section class="container section banners">
+    <a class="banner b1 reveal" href="./shop.html?cat=laptops">
+      <span class="banner-tag">تخفیف ویژه</span>
+      <h3>دنیای لپ‌تاپ‌ها</h3>
+      <p>تا ۱۲٪ تخفیف روی لپ‌تاپ‌های اورجینال</p>
+      <span class="banner-link">خرید کنید ←</span>
+    </a>
+    <a class="banner b2 reveal" href="./shop.html?cat=beauty">
+      <span class="banner-tag">جدیدترین‌ها</span>
+      <h3>زیبایی و مراقبت پوست</h3>
+      <p>محصولات اورجینال با ضمانت اصالت</p>
+      <span class="banner-link">خرید کنید ←</span>
+    </a>
+  </section>
+
+  <!-- Brands -->
+  <section class="container section">
+    <div class="section-head reveal"><h2>برندهای محبوب</h2></div>
+    <div class="brands-row reveal" id="brands-row"></div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="container section">
+    <div class="section-head reveal"><h2>نظر مشتریان مدینو</h2></div>
+    <div class="testi-grid reveal" id="testi-grid"></div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="container section">
+    <div class="newsletter reveal">
+      <h2>عضویت در خبرنامه مدینو</h2>
+      <p>از تخفیف‌ها و محصولات جدید، زودتر از همه باخبر شوید.</p>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" required placeholder="ایمیل خود را وارد کنید" aria-label="ایمیل">
+        <button class="btn btn-light" type="submit">عضویت</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="./js/data/products.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/pages.js"></script>
+</body>
+</html>

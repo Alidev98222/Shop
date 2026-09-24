@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فروشگاه | مدینو</title>
+<meta name="description" content="فهرست کامل محصولات فروشگاه اینترنتی مدینو با فیلتر دسته‌بندی، برند، قیمت و امتیاز.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235b4ee6'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>M</text></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body data-page="shop">
+<header id="site-header"></header>
+
+<main class="container">
+  <nav class="breadcrumb"><a href="./index.html">خانه</a><span>/</span><span>فروشگاه</span></nav>
+  <div class="shop-head"><h1>فروشگاه مدینو</h1><p id="shop-subtitle">همه محصولات در یک نگاه</p></div>
+
+  <button class="btn btn-outline filter-toggle" id="open-filters"></button>
+
+  <div class="shop-layout">
+    <aside class="filters" id="filters-panel">
+      <div class="filters-head"><h3>فیلترها</h3><button class="icon-btn" id="close-filters" aria-label="بستن"></button></div>
+      <div class="filter-group">
+        <div class="filter-title">دسته‌بندی</div>
+        <div id="cat-list"></div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">برند</div>
+        <div id="brand-list"></div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">محدوده قیمت (تومان)</div>
+        <div class="price-inputs">
+          <input type="number" id="price-min" placeholder="از ۰" min="0" inputmode="numeric">
+          <input type="number" id="price-max" placeholder="تا ۱۰۰٬۰۰۰٬۰۰۰" min="0" inputmode="numeric">
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">موجودی</div>
+        <label class="check-row"><input type="checkbox" id="avail-check"> فقط کالاهای موجود</label>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">حداقل امتیاز</div>
+        <div id="rating-filter" class="rating-filter">
+          <label class="check-row"><input type="radio" name="min-rating" value="0" checked> همه</label>
+          <label class="check-row"><input type="radio" name="min-rating" value="3"> ۳ ستاره و بالاتر</label>
+          <label class="check-row"><input type="radio" name="min-rating" value="4"> ۴ ستاره و بالاتر</label>
+        </div>
+      </div>
+      <button class="btn btn-outline btn-block" id="reset-filters">حذف همه فیلترها</button>
+    </aside>
+
+    <div class="shop-main">
+      <div class="toolbar">
+        <span id="result-count" class="result-count"></span>
+        <select id="sort-select" aria-label="مرتب‌سازی">
+          <option value="bestselling">پرفروش‌ترین</option>
+          <option value="newest">جدیدترین</option>
+          <option value="popular">محبوب‌ترین</option>
+          <option value="cheap">ارزان‌ترین</option>
+          <option value="expensive">گران‌ترین</option>
+        </select>
+        <div class="view-toggle">
+          <button id="view-grid" class="active" aria-label="نمای شبکه‌ای"></button>
+          <button id="view-list" aria-label="نمای لیستی"></button>
+        </div>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="products-grid" id="shop-grid"></div>
+      <div class="empty-state" id="shop-empty" hidden>
+        <div class="empty-icon"></div>
+        <h3>محصولی یافت نشد!</h3>
+        <p>فیلترها را تغییر دهید یا عبارت دیگری جستجو کنید.</p>
+      </div>
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="./js/data/products.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/pages.js"></script>
+</body>
+</html>

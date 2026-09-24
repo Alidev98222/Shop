@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ثبت‌نام | مدینو</title>
+<meta name="description" content="ایجاد حساب کاربری جدید در فروشگاه اینترنتی مدینو.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235b4ee6'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>M</text></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body data-page="auth" data-mode="register">
+<header id="site-header"></header>
+
+<main class="container section">
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div class="auth-logo">🛍️</div>
+      <h1 class="auth-title">ساخت حساب کاربری</h1>
+      <p class="auth-sub">در چند ثانیه عضو خانواده مدینو شوید</p>
+
+      <div class="auth-tabs" id="auth-tabs">
+        <button class="auth-tab" data-mode="login">ورود</button>
+        <button class="auth-tab active" data-mode="register">ثبت‌نام</button>
+      </div>
+
+      <div id="auth-logged" class="logged-box" hidden>
+        <p>✅ شما وارد حساب کاربری خود شده‌اید.</p>
+        <button class="btn btn-outline btn-block" id="logout-btn">خروج از حساب</button>
+      </div>
+
+      <form id="login-form" class="auth-form" hidden novalidate>
+        <div class="form-group">
+          <label for="li-user">شماره موبایل یا ایمیل</label>
+          <input type="text" id="li-user" class="input" placeholder="۰۹۱۲۳۴۵۶۷۸۹ یا ایمیل">
+          <span class="error-msg"></span>
+        </div>
+        <div class="form-group">
+          <label for="li-pass">رمز عبور</label>
+          <input type="password" id="li-pass" class="input" placeholder="حداقل ۶ کاراکتر">
+          <span class="error-msg"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">ورود به حساب</button>
+      </form>
+
+      <form id="register-form" class="auth-form" novalidate>
+        <div class="form-group">
+          <label for="rg-name">نام و نام‌خانوادگی</label>
+          <input type="text" id="rg-name" class="input" placeholder="مثلاً سارا محمدی">
+          <span class="error-msg"></span>
+        </div>
+        <div class="form-group">
+          <label for="rg-phone">شماره موبایل</label>
+          <input type="tel" id="rg-phone" class="input" placeholder="۰۹۱۲۳۴۵۶۷۸۹" dir="ltr">
+          <span class="error-msg"></span>
+        </div>
+        <div class="form-group">
+          <label for="rg-pass">رمز عبور</label>
+          <input type="password" id="rg-pass" class="input" placeholder="حداقل ۶ کاراکتر">
+          <span class="error-msg"></span>
+        </div>
+        <div class="form-group">
+          <label for="rg-pass2">تکرار رمز عبور</label>
+          <input type="password" id="rg-pass2" class="input" placeholder="تکرار رمز عبور">
+          <span class="error-msg"></span>
+        </div>
+        <div class="form-group">
+          <label class="check-row"><input type="checkbox" id="rg-terms"> <a href="./faq.html" target="_blank">قوانین و مقررات</a> را می‌پذیرم</label>
+          <span class="error-msg"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">ایجاد حساب کاربری</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="./js/data/products.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/pages.js"></script>
+</body>
+</html>
